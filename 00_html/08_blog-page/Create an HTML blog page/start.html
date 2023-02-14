@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Lesson</title>
+  </head>
+  <body background="./assets/img.jpg">
+    <article>
+      <h2>Deep Diving: Blockchain Oracles 🌐</h2>
+      <p>
+        Oracles are blockchain structures that bring off-chain data to be used
+        in smart contracts. Blockchains are generally closed systems and
+        therefore cannot be aware of information outside of their ecosystem.
+        Oracles enter the scene exactly at this point, taking data sources
+        outside the blockchain (off-chain) and processing this information on
+        the blockchain (on-chain).
+      </p>
+      <h4>But why? 😮</h4>
+      <p>
+        This is exactly the question that should follow. Why do smart contract
+        and, naturally, smart contract developers need off-chain data? Let's try
+        to clarify the situation with a current example. Currently, the World
+        Cup organization, which is watched by millions of people around the
+        world and held in winter for the first time, is ongoing. Let's say you
+        want to develop a dApp based on the question of who will be the top
+        scorer in the World Cup. Since the information about how many goals each
+        player scored in the World Cup is not available on the blockchain, we
+        need to somehow find out how many goals each player has scored in total
+        until the end of the final match and divide the total liquidity of the
+        users participating in this bet equally among the winners according to
+        the result. Oracles enter the scene exactly at this point, both
+        providing and confirming this information.
+      </p>
+      <h4>
+        Let's delve a little deeper into the relationship between Smart
+        Contracts and Oracles 🤿
+      </h4>
+      <p>
+        As mentioned above, Oracles "pull" off-chain stored information for
+        smart contracts working on the blockchain, as well as verify and
+        transfer this information. In addition, Oracles can "push" on-chain
+        data, allowing off-chain systems to access data on the blockchain. In a
+        single word, we can say that Oracle applications act as a bridge between
+        smart contracts on the blockchain and off-chain data providers. <br />
+        Blockchains are closed systems and therefore cannot communicate with the
+        real world on their own. This may initially sound bad, but it is thanks
+        to this closed nature that blockchains can operate as deterministic
+        systems. To briefly define deterministic systems, they are systems that
+        always produce the same output regardless of initial
+        conditions/situations and particular input. In other words, there is no
+        randomness or variation within them. In order to be deterministic,
+        blockchains limit their nodes and only ask simple binary (true/false)
+        questions in consensus and seek answers to these questions. For example:
+        <ul>
+          <li>Does the account have sufficient balance to cover the transaction made on the blockchain?</li>
+          <li>Is the transaction approved by the smart contract?</li>
+        </ul>
+        Let's consider and examine a structure in which blockchains are not closed to the outside world and further reinforce the importance of their deterministic nature. If blockchains were open systems, it would be possible to receive different outputs from each node, and the deterministic structure could be disrupted. Let's say we consider a trade on the ETH-USD pair and assume that we pull it through a traditional API. In addition to causing constant fluctuations in the price, as often happens in real life, if the API is removed or hacked, it would be possible to receive different outputs from the same smart contract executed on the nodes, which would obstruct the deterministic structure from producing the same output regardless of the initial conditions or specific inputs. In this case, we might have made the trade on the ETH-USD pair much cheaper or much more expensive at the time, and we could have presented a huge security vulnerability, which is essential to blockchains.
+      </p>
+    </article>
+    <h4>Feedback Form</h4>
+    <form>
+      <label>Name and surname: </label>
+      <input type="text" required/>
+      <label for="form-email" >email: </label>
+      <input id="form-email" name="form-email" type="email" placeholder="required" required/>
+      <label>Your opinion: </label>
+      <textarea></textarea>
+      <button>Submit</button>
+    </form>
+    <footer>
+      <p>© 2023 Onurcan</p>
+    </footer>
+    
+  </body>
+</html>
