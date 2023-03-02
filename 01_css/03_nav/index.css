@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background-color: #222629;
+}
+
+nav {
+  display: flex;
+  background-color: #222629;
+  color: white;
+  padding: 15px 30px;
+  align-items: center;
+  border-bottom: 2px solid white;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.main-container {
+  margin-left: 30px;
+}
+
+.main-container > * {
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-logo {
+  font-size: 26px;
+}
+
+.home-page {
+  color: white;
+}
+
+.link {
+  color: #585c5f;
+}
+
+.main-container > button,
+a > select {
+  color: #585c5f;
+  font-size: 20px;
+  background-color: #222629;
+  border: none;
+}
+
+.search-section > * {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  margin: 0 5px;
+}
+
+.search-section > button {
+  color: #1c8352;
+  border: #1c8352 2px solid;
+  padding: 10px 30px;
+  background-color: #222629;
+}
+
+.search-section > button:hover {
+  background-color: #1c8352;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-section,
+  .main-container {
+    display: none;
+  }
+}
