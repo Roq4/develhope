@@ -1,0 +1,36 @@
+@mixin article-card($color, $border-color, $font-size: 1rem) {
+  color: $color;
+  border: 1px solid $border-color;
+  font-size: $font-size;
+}
+
+div {
+  @include article-card(green, red);
+  text-align: center;
+  & > h1 {
+    text-decoration: underline blue;
+  }
+}
+
+.first-section {
+  display: flex;
+  padding: 1%;
+
+  & > article {
+    padding: 2%;
+    @include article-card(none, green);
+  }
+
+  & > article:nth-child(odd) {
+    @include article-card(blue, none);
+  }
+  & > article:nth-child(even) {
+    @include article-card(red, none);
+  }
+}
+
+.last-section {
+  margin: 0 1%;
+  margin-bottom: 1%;
+  @include article-card(green, blue, 24px);
+}

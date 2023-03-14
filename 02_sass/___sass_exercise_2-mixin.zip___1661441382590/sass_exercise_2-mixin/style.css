@@ -1,0 +1,40 @@
+div {
+  color: green;
+  border: 1px solid red;
+  font-size: 1rem;
+  text-align: center;
+}
+div > h1 {
+  text-decoration: underline blue;
+}
+
+.first-section {
+  display: flex;
+  padding: 1%;
+}
+.first-section > article {
+  padding: 2%;
+  color: none;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.first-section > article:nth-child(odd) {
+  color: blue;
+  border: 1px solid none;
+  font-size: 1rem;
+}
+.first-section > article:nth-child(even) {
+  color: red;
+  border: 1px solid none;
+  font-size: 1rem;
+}
+
+.last-section {
+  margin: 0 1%;
+  margin-bottom: 1%;
+  color: green;
+  border: 1px solid blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
